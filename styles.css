@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+
+.header{
+    background-color: aqua;
+    display: grid;    
+}
+
+.main{
+    background-color: gray;
+    
+}
+
+.sidebar{
+    background-color: blue;
+    
+}
