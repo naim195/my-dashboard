@@ -1,21 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     display: grid;
     grid-template-columns: 2fr 8fr; 
+    font-family: 'Arial', sans-serif;
 }
 
 .header {
-    background-color: burlywood;
+    background-color: #283447; /* Dark Blue-Gray */
     display: flex;    
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.details{
+.details {
     display: flex;
+    align-items: center;
 }
 
 .buttons {    
@@ -23,28 +28,76 @@ body {
     gap: 10px;
 }
 
+.button {
+    background-color: #3E5771; /* Dark Blue */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #506E8A; /* Lighter Blue on hover */
+}
+
 .sidebar {
-    background-color: blue;
+    background-color: #394B59; /* Deep Blue-Gray */
+    color: #fff;
+    padding: 20px;
+}
+
+.dashboard-element {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #3E5771; /* Dark Blue */
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.s-element img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.s-element {
+    display: flex;
+    align-items: center;
 }
 
 .main {
-    background-color: gray;
+    background-color: #ECF0F3; /* Light Gray */
     display: grid;
-    
+    padding: 20px;
 }
 
-.cards{
+.cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.main .container{
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main .container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 50px;
+    gap: 20px;
 }
 
-.main> .title{
+.main > .title {
     margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
 }
