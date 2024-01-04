@@ -1,24 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: grid;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 2fr 8fr; 
 }
 
-.header{
-    background-color: aqua;
-    display: grid;    
+.header {
+    background-color: burlywood;
+    display: flex;    
+    justify-content: space-between;
 }
 
-.main{
-    background-color: gray;
-    
+.details{
+    display: flex;
 }
 
-.sidebar{
+.buttons {    
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar {
     background-color: blue;
+}
+
+.main {
+    background-color: gray;
+    display: grid;
     
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 50px;
+}
+
+.main .container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+}
+
+.main> .title{
+    margin-bottom: 20px;
 }
